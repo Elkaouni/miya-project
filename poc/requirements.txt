@@ -1,0 +1,9 @@
+pydub
+SpeechRecognition
+whisper
+click
+torch
+numpy
+torch
+pyttsx3
+gpt4free
