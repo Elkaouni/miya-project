@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-mic',
+  selector: 'app-mic-waves',
   templateUrl: './mic.component.html',
   styleUrls: ['./mic.component.scss']
 })
-export class MicComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class MicComponent {
+  @Input() isMicActive: boolean = false;
+  
 
 }

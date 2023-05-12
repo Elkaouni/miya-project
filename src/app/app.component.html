@@ -12,9 +12,15 @@
 
       <app-miya-mascot [miya_state]="miya_state"></app-miya-mascot>
       <br>
-      <button (click)="wakeMiyaUp()">{{button_title}}</button>
+      <button  id="micButton" (click)="wakeMiyaUp()" [class.active]="isMicActive" >
+        {{button_title}}
+      </button>
+      <br>
+
+      <app-mic-waves [isMicActive]="isMicActive"></app-mic-waves>
  
 
+      <br><br><br>
   <!-- Footer -->
   <footer>
       Miya poc    
